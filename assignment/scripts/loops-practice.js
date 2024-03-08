@@ -43,16 +43,32 @@ console.log('Some stars:');
 for (const star of stars) { //iterates over each element of the stars array. each time assigning the current star to the variable star.
   console.log(star); // each iteration is saved in this loop. expect 'Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb'
 }
-
+// expect 'Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb'
 
 // 3. While loops  
 console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
+let i = 0; //index starting point, initialize 
+while (i < stars.length) {
+  console.log(stars[i]); //console is before the i++ to assure to log the current star in the 0 index
+  i++; // increments over each variable index
+}
+// expect 'Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb'
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
-
+i = 0; // resets index
+while (i <= 5) {
+  console.log(i); // needed to log current index before incrementing 
+  i++; //increments by one until conditions are met; i <= 5
+}
+//expect 0,1,2,3,4,5,
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+i = 10;
+while (i >= 5) {
+  console.log(i);// logs current index and then increments; saves each loop results
+  i--; // decremants; counts down by one 
+}
